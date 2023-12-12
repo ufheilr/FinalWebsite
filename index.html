@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coin Toss Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Coin Toss Game</h1>
+    <div class="coin-selection">
+      <svg id="headsBtn" class="coin-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+        <!-- SVG code for the heads button -->
+        <circle cx="50" cy="50" r="45" fill="#f4d03f" />
+        <text x="32" y="60" font-family="Arial, sans-serif" font-size="40" fill="black">H</text>
+      </svg>
+      <svg id="tailsBtn" class="coin-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+        <!-- SVG code for the tails button -->
+        <circle cx="50" cy="50" r="45" fill="#f4d03f" />
+        <text x="32" y="60" font-family="Arial, sans-serif" font-size="40" fill="black">T</text>
+      </svg>
+    </div>
+    <button id="tossBtn">Toss Coin</button>
+    <button id="resetBtn">Reset Game</button>
+    <div class="result">
+      <h2 id="resultText"></h2>
+      <div id="coinImage" class="coin">
+        <img id="heads-img" src="svg/heads.svg" alt="heads">
+        <img id="tails-img" src="svg/tails.svg" alt="tails">
+      </div>
+    </div>
+    <div class="stats">
+      <h2>Game Stats</h2>
+      <div id="gamesPlayed">Games Played: 0</div>
+      <div id="gamesWon">Games Won: 0</div>
+      <div id="gamesLost">Games Lost: 0</div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+
